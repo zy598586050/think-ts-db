@@ -1,0 +1,23 @@
+{
+  "name": "think-ts-db",
+  "version": "1.0.0",
+  "description": "This is a powerful database tool.",
+  "keywords": [
+    "think-ts",
+    "think-ts-db"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "author": "zhangyu",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.14.0",
+    "ioredis": "^5.4.1",
+    "moment": "^2.30.1",
+    "mongoose": "^8.5.1",
+    "mysql2": "^3.10.3"
+  }
+}
