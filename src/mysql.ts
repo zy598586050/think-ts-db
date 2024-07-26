@@ -70,7 +70,7 @@ export default class MySql {
      * @param value 值
      * @returns 
      */
-    whereAnd(field: string, condition: CONDITION, value: string | number) {
+    whereAnd(field: string, condition: CONDITION, value?: string | number) {
         this.whereStr += `AND ${field} ${arguments.length === 2 ? '=' : condition} ? `
         this.values.push(arguments.length === 2 ? condition : value as string | number)
         return this
@@ -83,7 +83,7 @@ export default class MySql {
      * @param value 值
      * @returns 
      */
-    whereOr(field: string, condition: CONDITION, value: string | number) {
+    whereOr(field: string, condition: CONDITION, value?: string | number) {
         this.whereStr += `OR ${field} ${arguments.length === 2 ? '=' : condition} ? `
         this.values.push(arguments.length === 2 ? condition : value as string | number)
         return this

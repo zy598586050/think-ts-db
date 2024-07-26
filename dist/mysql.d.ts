@@ -40,7 +40,7 @@ export default class MySql {
      * @param value 值
      * @returns
      */
-    whereAnd(field: string, condition: CONDITION, value: string | number): this;
+    whereAnd(field: string, condition: CONDITION, value?: string | number): this;
     /**
      * 多条件查询OR，前边必须要有where的调用
      * @param field 字段名
@@ -48,7 +48,7 @@ export default class MySql {
      * @param value 值
      * @returns
      */
-    whereOr(field: string, condition: CONDITION, value: string | number): this;
+    whereOr(field: string, condition: CONDITION, value?: string | number): this;
     /**
      * 多条件查询IN
      * @param field 字段名
