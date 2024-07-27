@@ -19,6 +19,7 @@
 
 - 💪 ORM思想用对象的方式CRUD
 - 🔥 方法提炼封装使用更加简洁优雅
+- ⚡️ Nuxt、Next、Koa、Express等框架中都可以直接使用
 
 ## think-ts-db
 
