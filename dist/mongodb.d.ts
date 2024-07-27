@@ -3,7 +3,7 @@ interface DBOBJECT {
 }
 export interface MONGOOSECONFIG {
     host: string;
-    port: number;
+    port?: number;
     user: string;
     password: string;
     database: string;

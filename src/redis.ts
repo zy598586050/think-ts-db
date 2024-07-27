@@ -6,9 +6,9 @@ interface DBOBJECT {
 
 export interface REDISCONFIG {
     host: string;
-    port: number;
-    db: number;
-    password: string;
+    port?: number;
+    db?: number;
+    password?: string;
 }
 
 export default class Redis {

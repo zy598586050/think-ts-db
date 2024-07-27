@@ -4,7 +4,7 @@ interface DBOBJECT {
 }
 export interface ESCONFIG {
     host: string;
-    port: number;
+    port?: number;
 }
 export default class ElasticSearch {
     elasticSearchConfig: ESCONFIG;

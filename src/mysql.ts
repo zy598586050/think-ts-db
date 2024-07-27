@@ -9,7 +9,7 @@ interface DBOBJECT {
 }
 export interface MYSQLCONFIG {
     host: string;
-    port: number;
+    port?: number;
     user: string;
     password: string;
     database: string;
